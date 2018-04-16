@@ -1,0 +1,178 @@
+html, body {
+  background: #f1f1f1;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  padding: 1em;
+}
+.main-header {
+    background-repeat: repeat-x;
+    text-align: center;
+    background-image: url(image/1.jpg);
+}
+.nav {
+    width: 100%;
+    background: #2ABCA7;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #ccc;
+    width: 16.6667%; /* fallback for non-calc() browsers */
+    width: calc(100% / 4);
+    box-sizing: border-box;
+	font-family: 'Source Sans Pro',arial,sans-serif;
+	font-size: 1.0em;
+}
+
+.nav ul li:first-child {
+    border-left: none;
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+}
+h1 {
+   text-align: center;
+   color: DarkCyan;
+}
+
+h2 {
+  text-align:center;
+  padding:18px 0 18px 0;
+  font-size: 1.4em;
+  color: #3CB371;
+}
+h3 {
+   text-align: center;
+   color: #2ABCA7;
+   font-family: 'Source Sans Pro',arial,sans-serif;
+}
+p{
+   text-align: left;
+   color: #008080;
+   font-family: 'Source Sans Pro',arial,sans-serif;
+   font-size: 13px;
+}
+li{
+   text-align: left;
+   color: #008080;
+   font-family: 'Source Sans Pro',arial,sans-serif;
+   font-size: 12px;
+   line-height: 30px;
+}
+table {
+	width:100%;
+	border: 1px solid black;
+    border-collapse: collapse;
+	text-align: left;
+	color: DarkCyan;
+}
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align: left;
+	color: DarkCyan;
+	font-size: 12px;
+	padding: 5px;
+}
+.about table {
+	border: 0px solid black;
+	margin-left:90px; 
+	width:70%;
+	border: 0px solid black;
+    border-collapse: collapse;
+	text-align: left;
+	color: DarkCyan;
+	padding: 5px;
+}
+table.about th, table.about td {
+    border: 0px solid black;
+    border-collapse: collapse;
+	text-align: left;
+	color: DarkCyan;
+	padding: 5px;
+}	
+input[type=text],input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #2ABCA7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+ #loginDiv {
+            float: left;
+            height:100%;
+            width: 30%;
+        }
+
+  #welcomeDiv {
+            float:left;
+            height: 100%;
+            width: 60%;
+            margin-left: 5%;
+        }
+
+        form {
+            height:80%;
+            width: 100%;
+        }
+        fieldset{
+            border:1px solid green ;
+        }
+       legend {
+          padding: 0.2em 0.5em;
+          border:1px solid green;
+          color:green;
+          font-size:90%;
+          text-align:left;
+        }
+
+        input[type=text],input[type=password] {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+        input[type=submit]{
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        
+.sticky_tr{
+            position: fixed;
+            right:0;
+            top:0;
+            margin-right: 10px;
+        }

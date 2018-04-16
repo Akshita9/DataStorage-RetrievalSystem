@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Group 10 - Database Search</title>
+    <link href="group10_style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+<body>
+    
+    <h1>People of Data Science</h1>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="http://iia02.ci.unt.edu/5717/group10/group10_index.php">Home</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_Search.html">Search Database</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_TableView.html">Table View</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_AboutUs.html">About Us</a></li>
+			</ul>
+        </div>
+    </header>
+	
+	<p style="font-size:20px; text-align: center"> This page allows you to perform customized searches of Group 10's Database. </p>
+	
+	<form action="group10_Search.php" method="post">
+	<p style="font-size:20px"> What do you want to search for? </p>
+		Choose the First search field requirement*:<br />
+			<select name="Criteria1">
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName" selected="selected">Scholar's Last Name</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+			
+		Enter Search Term: <input name="searchterm1" type="text" size="40"/></br></br>	
+			<select name="Join1">
+				<option value="AND">AND</option>
+				<option value="OR">OR</option>
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+			</select></br></br>
+			
+		Choose the Second search field requirement:</br>	
+			<select name="Criteria2">
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName">Scholar's Last Name</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+			
+		Enter Search Term: <input name="searchterm2" type="text" size="40"/></br>	
+		<br />
+		
+		<p style="font-size:20px"> How do you want the results to look? </p>
+		&emsp;Column 1*:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Column 2:
+		</br>
+			<select name="Result1">
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName" selected="selected">Scholar's Last Name</option>
+				<option value="CurrentEmployer">Scholar's Current Employer</option>
+				<option value="CurrentTitle">Scholar's Current Title</option>
+				<option value="TotalNoOfCitation">Scholar's Citation Count</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Title">Publication Title</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="CitedBy">Publication Citation</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+			&emsp;
+			<select name="Result2">
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName">Scholar's Last Name</option>
+				<option value="CurrentEmployer">Scholar's Current Employer</option>
+				<option value="CurrentTitle">Scholar's Current Title</option>
+				<option value="TotalNoOfCitation">Scholar's Citation Count</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Title">Publication Title</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="CitedBy">Publication Citation</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>	
+			</br></br>
+			&emsp;Column 3:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Column 4:
+			</br>
+			<select name="Result3">
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName">Scholar's Last Name</option>
+				<option value="CurrentEmployer">Scholar's Current Employer</option>
+				<option value="CurrentTitle">Scholar's Current Title</option>
+				<option value="TotalNoOfCitation">Scholar's Citation Count</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Title">Publication Title</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="CitedBy">Publication Citation</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+			&emsp;
+			<select name="Result4">
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName">Scholar's Last Name</option>
+				<option value="CurrentEmployer">Scholar's Current Employer</option>
+				<option value="CurrentTitle">Scholar's Current Title</option>
+				<option value="TotalNoOfCitation">Scholar's Citation Count</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Title">Publication Title</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="CitedBy">Publication Citation</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+		</br></br>
+			&emsp;Column 5:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Column 6:
+			</br>
+			<select name="Result5">
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName">Scholar's Last Name</option>
+				<option value="CurrentEmployer">Scholar's Current Employer</option>
+				<option value="CurrentTitle">Scholar's Current Title</option>
+				<option value="TotalNoOfCitation">Scholar's Citation Count</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Title">Publication Title</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="CitedBy">Publication Citation</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+			&emsp;
+			<select name="Result6">
+				<option value="NULL" selected="selected">No Additional Criteria</option>
+				<option value="FirstName">Scholar's First Name</option>
+				<option value="LastName">Scholar's Last Name</option>
+				<option value="CurrentEmployer">Scholar's Current Employer</option>
+				<option value="CurrentTitle">Scholar's Current Title</option>
+				<option value="TotalNoOfCitation">Scholar's Citation Count</option>
+				<option value="EducationInstitution">Educational Institution</option>
+				<option value="DegreeLevel">Educational Degree Level</option>
+				<option value="Program">Educational Program</option>
+				<option value="YearAwarded">Year Degree Awarded</option>
+				<option value="WorkInstitution">Employment Institution</option>
+				<option value="WorkTitle">Job Title</option>
+				<option value="WorkCountry">Country of Employment</option>
+				<option value="Title">Publication Title</option>
+				<option value="Publisher">Publication Publisher</option>
+				<option value="Year">Publication Year</option>
+				<option value="CitedBy">Publication Citation</option>
+				<option value="PublicationType">Publication Type</option>
+			</select>
+			</br>
+		<br /><input type="submit" name="submit" value="Submit"/>
+		</form>
+		
+	
+	* Required Fields
+	
+	</body>
+</html>

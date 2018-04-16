@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Group 10 - Reporting Tools</title>
+    <link href="group10_style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+<body>
+    
+    <h1>People of Data Science</h1>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="http://iia02.ci.unt.edu/5717/group10/group10_Index.html">Home</a></li>
+                <li><a href="http://iia02.ci.unt.edu/5717/group10/group10_Reporting.html">Reporting Tools</a></li>
+                <li><a href="http://iia02.ci.unt.edu/5717/group10/group10_Insert.html">Insert Data</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_Search.html">Search Database</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_TableView.html">Table View</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_AboutUs.html">About Us</a></li>
+			</ul>
+        </div>
+    </header>
+	
+	<form action="group10_Reporting.php" method="post">
+	<p style="font-size:20px; text-align: center">This page allows you to retrieve useful reports for group 10 database</p>
+	Choose the report field requirement:
+	<select name="ReportCriteria1">
+				<option value="1"> Count of scholars by year </option>
+				<option value="2"> Count of publications by year</option>
+				<option value="3"> None of the above</option>
+	</select><br/>
+	Enter year : <input name="reportterm" type="text" size="20"/></br></br>
+	
+    Choose the top five listed results:
+	<select name="ReportCriteria2">
+				<option value="4"> List of top five cited scholars</option>
+				<option value="5"> List of top five cited publication</option>
+				<option value="6"> None of the above</option>
+	</select>
+	<br /><input type="submit" name="submit" value="Submit"/>
+	<form>
+	</body>
+</html>

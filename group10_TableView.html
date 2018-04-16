@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Group 10 - Table View</title>
+    <link href="group10_style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+<body>
+    
+    <h1>People of Data Science</h1>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="http://iia02.ci.unt.edu/5717/group10/group10_index.php">Home</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_Search.html">Search Database</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_TableView.html">Table View</a></li>
+				<li><a href="http://iia02.ci.unt.edu/5717/group10/group10_AboutUs.html">About Us</a></li>
+			</ul>
+        </div>
+    </header>
+	
+	<p style="font-size:20px"> This page allows you to view a full table in Group 10's Database. </p>
+	
+	<form action="group10_TableView.php" method="post">
+		Please choose the table you wish to view:<br /></br>
+			<select name="table_name">
+				<option value="SCHOLAR">Scholar</option>
+				<option value="EDUCATION_HISTORY">Education History</option>
+				<option value="EMPLOYMENT_HISTORY">Employment History</option>
+				<option value="PUBLICATION_HISTORY">Publication History</option>
+				<option value="SCHOLAR_INTERESTS">Scholar Interests</option>
+			</select>
+		<br />
+		<br /><input type="submit" name="submit" value="Submit"/>
+		</form>
+	
+	</body>
+</html>
